@@ -34,6 +34,7 @@ This step has been created for usernames that don't follow you back, i run this 
 
 ### Donate
 
-If this bot helps you to making more customers or develope your social media marketing donate me. Thanks a lot ( :thumbsup: )
+If this bot helps you to making more customers or develope your social media marketing donate me. 
+Thanks a lot ( :thumbsup: )
 
 ![btc](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png) Bitcoin: `1D8hw5MRCaHegNhC4rs8nhet9KT9t9qTVC`
