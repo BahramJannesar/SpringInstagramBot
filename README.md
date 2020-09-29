@@ -4,4 +4,4 @@ A bot for gaining the followers that is related to your business , if you are a 
 
 ### Why "Spring" ?
 
-For the time i run this Bot for my frinend "Bahar" that means in persian language spring , she has a small bakery in her house and wants to raise her follower for makeing more customers.
+For the first time i run this Bot for my frinend "Bahar" that her name means "Spring" in persian, she lives in [Isfahan](https://en.wikipedia.org/wiki/Isfahan) and has a small bakery there at her house and wants to raise her follower for makeing more customers. her page [here](https://www.instagram.com/springcake_isfahan/) check her page her cakes are very delicious. ( :cake: )
