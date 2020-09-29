@@ -14,7 +14,7 @@ for installing these dependencies check that repo.
 
 #### First Step 
 
-Run the gain_follower.py file for gaining the target username followers like this.
+Run this scirpt for gaining the target username's followers like this.
 
     python3 gain_follower.py -u USERNAME -p PASSWORD -t TARGET_USERNAME -c NUMBER_OF_FOLLOWERS_YOU_WANT_GAIN
 
@@ -31,7 +31,8 @@ This step has been created for usernames that don't follow you back, i run this 
 
     python3 unfollow_username.py -u USERNAME -p PASSWORD
 
-### Donat
+### Donate
 
+If this bot helps you to making more customers or develope your social media marketing donate me. Thanks a lot ( :thumbsup: )
 
- 
+![btc](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png) Bitcoin: `1D8hw5MRCaHegNhC4rs8nhet9KT9t9qTVC`
