@@ -16,4 +16,4 @@ for installing these dependencies check that repo.
 
 You must first of all run the gain_follower.py file for gaining the target username followers like this.
 
-    python3 gain_follower.py -u your_account_username -p your_account_password -t target_account_username -c number_of_you_want_gain
+    python3 gain_follower.py -u username -p password -t target_username -c number_of_followers_you_want_gain
