@@ -1,6 +1,6 @@
 ## Spring Instagram Bot
 
-A bot for gaining the followers that is related to your business , if you are a makeup artist or you have bakery in your house and want to develope your social media marketing that related to your job , i told you this bot can help you to gain the followers .
+A bot for gaining the followers that is related to your business , if you are a makeup artist or you have bakery in your house and want to develope your social media marketing that related to your job , i told you this bot can help you to gain more followers .
 
 ### Why "Spring" ?
 
