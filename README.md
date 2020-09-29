@@ -12,20 +12,20 @@ her page is available [here](https://www.instagram.com/springcake_isfahan/) , he
 I used the [private-instagram-library](https://github.com/ping/instagram_private_api) pakage for this project, this pakage very valuable for using instagram API
 for installing these dependencies check that repo.
 
-#### First Step 
+#### First Step :
 
 Run this scirpt for gaining the target username's followers like this.
 
     python3 gain_follower.py -u USERNAME -p PASSWORD -t TARGET_USERNAME -c NUMBER_OF_FOLLOWERS_YOU_WANT_GAIN
 
-#### Second Step
+#### Second Step :
 
 This step of project must run every day at the specific time, every time this scrpit runs, follows 50 account for you this limitaion is just for instagram API request rate limit, i propose to you 08:00 PM, beacuse this time is more efficiently (this is my experience) but in every country this time is different.
 for this job i propose to you to run this script on your server with [crontab](https://crontab.guru/), it helps you to run script with time scheduling.
 
     python3 follow_username.py -u USERNAME -p PASSWORD
     
-#### Third Step
+#### Third Step :
 
 This step has been created for usernames that don't follow you back, i run this script on server 2 times on a week with corntab just like second step.
 
