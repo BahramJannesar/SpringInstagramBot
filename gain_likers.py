@@ -67,19 +67,20 @@ def gain_likers(list_media_ids):
     dict_of_likers = {}
 
     for each_id in list_media_ids:
+        if len(list_of_likers) <= counts_of_likers:
             likers = api.media_likers(each_id)
             for liker in likers['users']:
-                if len(list_of_likers) <= counts_of_likers:
-                    list_of_likers.append(liker['pk'])
-                else:
-                    break
+                list_of_likers.append(liker['pk'])
+                list_of_likers = list(set(list_of_likers))
+                dict_of_likers = {
+                        'target_user_name': target_username,
+                        'target_followers' : list_of_likers
+                                    }
+                save_object('likers.json' , dict_of_likers , 'w' , '')
+        else:
+            break
 
-    list_of_likers = list(set(list_of_likers))
-    dict_of_likers = {
-            'target_user_name': target_username,
-            'target_followers' : list_of_likers
-    }
-    save_object('likers.json' , dict_of_likers , 'w' , '')
+
 
 if __name__ == "__main__":
     

@@ -51,7 +51,7 @@ def follow_target_user_ids(option):
         save_object(file_name , target_follower_dict , 'w' , '')
 
     for user in must_follow_today:
-        time.sleep(15)
+        time.sleep(20)
         status = api.friendships_create(user)
 
         print('Username number {} with user id {} is now your following'.format(counter , user))
