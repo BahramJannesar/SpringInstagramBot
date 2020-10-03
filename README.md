@@ -15,16 +15,31 @@ for installing these dependencies check that repo.
 
 #### First Step :
 
-Run this scirpt for gaining the target username's followers like this.
+For the first step you have three choice:
+*  Gain the target user followers ( users that follow target user )
+*  Gain the target user likers ( users that like on target user's  post)
+*  Gain the target user commenters ( users that take comments on target user's post ) --> commenters is a funny name that i picked for these users ( :laughing: )
 
-    python3 gain_follower.py -u USERNAME -p PASSWORD -t TARGET_USERNAME -c NUMBER_OF_FOLLOWERS_YOU_WANT_GAIN
+For Followers :
+
+        python3 gain_follower.py -u USERNAME -p PASSWORD -t TARGET_USERNAME -o followers -cf NUMBER_OF_FOLLOWERS_YOU_WANT_GAIN
+
+For Likers :
+
+        python3 gain_likers.py -u USERNAME -p PASSWORD -t TARGET_USERNAME -o likers -cl NUMBER_OF_LIKERS_YOU_WANT_GAIN
+
+For Commenters :
+ 
+        python3 gain_commenters.py -u USERNAME -p PASSWORD -t TARGET_USERNAME  -o commenters -cc NUMBER_OF_COMMENTERS_YOU_WANT_GAIN
 
 #### Second Step :
 
 This step of project must run every day at the specific time, every time this scrpit runs, follows 50 account for you this limitaion is just for instagram API request rate limit, i propose to you 08:00 PM, beacuse this time is more efficiently (this is my experience) but in every country this time is different.
 for this job i propose to you to run this script on your server with [crontab](https://crontab.guru/), it helps you to run script with time scheduling.
 
-    python3 follow_username.py -u USERNAME -p PASSWORD
+For every choise that you choosed from step one you can run :
+
+    python3 follow_username.py -u USERNAME -p PASSWORD -t TARGET_USERNAME -o { followers , likers , commenters }
     
 #### Third Step :
 
