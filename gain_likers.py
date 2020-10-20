@@ -11,6 +11,7 @@ user_name = arguser.user
 password = arguser.password
 target_username = arguser.username_target
 counts_of_likers = int(arguser.counts_of_likers)
+counts_of_post = int(arguser.counts_of_posts)
 
 api = login(user_name, password)
 
@@ -33,7 +34,6 @@ def gain_user_feed():
 
     feed_result = []
     target_user_id  = get_target_user_id_and_api( user_name , password ,  target_username )
-    user_info = api.user_info(target_user_id)
 
     user_feed = api.user_feed(target_user_id)
     feed_result.extend(user_feed['items'])
@@ -41,7 +41,7 @@ def gain_user_feed():
 
     next_max_id = user_feed.get('next_max_id')
 
-    while user_feed['num_results'] < user_info['user']['media_count']:
+    while user_feed['num_results'] < counts_of_post:
         user_feed = api.user_feed(target_user_id , max_id = next_max_id)
         feed_result.extend(user_feed['items'])
         if not user_feed['more_available']:

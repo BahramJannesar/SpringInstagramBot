@@ -40,8 +40,8 @@ def follow_target_user_ids(option):
     counter = 1
     with open(file_name , 'r') as file :
         loaded_json = json.load(file)
-        must_follow_today = loaded_json['target_followers'][0:49]
-        must_to_write = loaded_json['target_followers'][50:-1]
+        must_follow_today = loaded_json['target_followers'][0:99]
+        must_to_write = loaded_json['target_followers'][100:-1]
         
         target_follower_dict = {
             'target_user_id':target_user_id,
@@ -66,5 +66,13 @@ def follow_target_user_ids(option):
 
 if __name__ == "__main__":
 
-    follow_target_user_ids(option)
+    
+
+    counter = 1 
+    while counter <= 4:
+        print('procces number {} is runing'.format(counter))
+        follow_target_user_ids(option)
+        time.sleep(21600)
+        counter += 1
+        print('procces number {} is done'.format(counter))
     
